@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "EduHouse",
-    "slug": "EduHouse",
+    "name": "Casa Pontos",
+    "slug": "casa-pontos",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",

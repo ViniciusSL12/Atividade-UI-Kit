@@ -23,18 +23,18 @@ export type AppState = {
 };
 
 const initialChores: Chore[] = [
-  { id: 'c1', title: 'Arrumar o quarto', points: 10, done: false },
-  { id: 'c2', title: 'Lavar a louca', points: 8, done: false },
-  { id: 'c3', title: 'Juntar brinquedos', points: 6, done: false },
-  { id: 'c4', title: 'Dar banho no cachorro', points: 12, done: false },
-  { id: 'c5', title: 'Organizar mochila', points: 5, done: false },
+  { id: 'c1', title: 'Estudar 30 minutos', points: 10, done: false },
+  { id: 'c2', title: 'Regar as plantas', points: 8, done: false },
+  { id: 'c3', title: 'Limpar a mesa', points: 6, done: false },
+  { id: 'c4', title: 'Organizar os livros', points: 12, done: false },
+  { id: 'c5', title: 'Preparar a mochila', points: 5, done: false },
 ];
 
 const initialRewards: Reward[] = [
-  { id: 'r1', title: '30 min de videogame', cost: 20, redeemed: false },
-  { id: 'r2', title: 'Escolher o jantar', cost: 25, redeemed: false },
+  { id: 'r1', title: 'Hora extra de jogo', cost: 20, redeemed: false },
+  { id: 'r2', title: 'Noite de pizza', cost: 25, redeemed: false },
   { id: 'r3', title: 'Passeio no parque', cost: 35, redeemed: false },
-  { id: 'r4', title: 'Cinema em familia', cost: 50, redeemed: false },
+  { id: 'r4', title: 'Sessão de cinema', cost: 50, redeemed: false },
 ];
 
 const AppContext = React.createContext<AppState | null>(null);

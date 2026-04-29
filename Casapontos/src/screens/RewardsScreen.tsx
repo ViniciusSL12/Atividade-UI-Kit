@@ -49,7 +49,7 @@ const RewardsScreen: React.FC<Props> = ({ navigation }) => {
 
   return (
     <Layout style={styles.container} level="1">
-      <TopNavigation title="EduHouse" subtitle="Recompensas" alignment="center" />
+      <TopNavigation title="Casa Pontos" subtitle="Suas recompensas" alignment="center" />
       <Layout style={styles.pointsCard} level="2">
         <View style={styles.pointsRow}>
           <Text category="h4">Saldo</Text>
@@ -59,7 +59,7 @@ const RewardsScreen: React.FC<Props> = ({ navigation }) => {
             </Text>
           </View>
         </View>
-        <Text appearance="hint">Troque seus pontos por recompensas.</Text>
+        <Text appearance="hint">Troque seus pontos por benefícios especiais.</Text>
       </Layout>
       <FlatList
         data={rewards}
@@ -68,7 +68,7 @@ const RewardsScreen: React.FC<Props> = ({ navigation }) => {
         contentContainerStyle={styles.list}
       />
       <Button style={styles.backButton} appearance="ghost" onPress={() => navigation.goBack()}>
-        Voltar para pontos
+        Voltar para tarefas
       </Button>
     </Layout>
   );
@@ -83,6 +83,7 @@ const styles = StyleSheet.create({
     marginTop: 8,
     padding: 16,
     borderRadius: 16,
+    backgroundColor: '#FDF2F8',
   },
   pointsRow: {
     flexDirection: 'row',
@@ -96,13 +97,13 @@ const styles = StyleSheet.create({
     gap: 12,
   },
   scorePill: {
-    backgroundColor: '#E6F2FF',
+    backgroundColor: '#FFF0F6',
     paddingHorizontal: 12,
     paddingVertical: 6,
     borderRadius: 999,
   },
   scoreText: {
-    color: '#1D4ED8',
+    color: '#B83280',
   },
   card: {
     borderRadius: 16,

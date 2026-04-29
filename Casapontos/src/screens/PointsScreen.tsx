@@ -42,7 +42,7 @@ const PointsScreen: React.FC<Props> = ({ navigation }) => {
 
   return (
     <Layout style={styles.container} level="1">
-      <TopNavigation title="EduHouse" subtitle="Pontos" alignment="center" />
+      <TopNavigation title="Casa Pontos" subtitle="Minhas tarefas" alignment="center" />
       <Layout style={styles.pointsCard} level="2">
         <View style={styles.pointsRow}>
           <Text category="h4">Pontos</Text>
@@ -54,8 +54,8 @@ const PointsScreen: React.FC<Props> = ({ navigation }) => {
         </View>
         <Text appearance="hint">
           {nextReward
-            ? `Proxima meta: ${nextReward.title} (${nextReward.cost} pontos)`
-            : 'Todas recompensas liberadas'}
+            ? `Próxima conquista: ${nextReward.title} (${nextReward.cost} pontos)`
+            : 'Você desbloqueou todas as recompensas'}
         </Text>
       </Layout>
       <FlatList
@@ -80,6 +80,7 @@ const styles = StyleSheet.create({
     marginTop: 8,
     padding: 16,
     borderRadius: 16,
+    backgroundColor: '#FDF2F8',
   },
   pointsRow: {
     flexDirection: 'row',
@@ -93,13 +94,13 @@ const styles = StyleSheet.create({
     gap: 12,
   },
   scorePill: {
-    backgroundColor: '#E6F2FF',
+    backgroundColor: '#FFF0F6',
     paddingHorizontal: 14,
     paddingVertical: 6,
     borderRadius: 999,
   },
   scoreText: {
-    color: '#1D4ED8',
+    color: '#B83280',
   },
   card: {
     borderRadius: 16,
